@@ -1,0 +1,19 @@
+ena 
+Config t
+
+hostname HR-SW
+
+enable password Cisco
+
+Line console 0
+Password Cisco
+Login 
+exit 
+
+banner motd $NO UNAUTHORIZED ACCESS!!!$
+
+no ip domain-lookup 
+
+Service password-encryption
+
+do wr
